@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 import lombok.Data;
 
 /**
@@ -13,14 +14,25 @@ import lombok.Data;
  */
 @Entity
 @Data
-//@Table(name ="almacen")
-public class OrdenCompra {
+@Table(name ="usuario")
+public class Usuario {
     
     private final static Long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    protected Long codCompra;
+    protected Long codUsuario;
+    
+    @NotEmpty
+    protected String nombreUsuario;
+    
+    protected int telefonoUsuario;
+    
+    @NotEmpty
+    protected String correoUsuario;
+    
+    @NotEmpty
+    protected String contraseñaUsuario; //Probar con otros codigos despues, para poder implementar bloqueo
     
     
 }
