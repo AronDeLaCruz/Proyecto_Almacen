@@ -31,5 +31,5 @@ public class PrototipoApplication {
             return new CorsFilter(urlBasedCorsConfigurationSource);
             
         }   
-
+        
 }

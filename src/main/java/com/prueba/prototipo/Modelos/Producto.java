@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 //Tambien conocido como clase Bien
 package com.prueba.prototipo.Modelos;
 
@@ -29,6 +24,7 @@ public class Producto implements Serializable {
     @NotEmpty
     protected String nombreProducto;
     
+    protected String descripcionProducto;
     /*
     Como denominas a cada columna tanto aqui como en la base de datos afecta a
     la recepcion de datos

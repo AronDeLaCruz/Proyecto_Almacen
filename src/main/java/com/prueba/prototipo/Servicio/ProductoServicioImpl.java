@@ -15,12 +15,8 @@ public class ProductoServicioImpl implements ProductoServicio{
     
     @Autowired
     private ProductoODA productoODA;
-   /* 
-    
-    public List<Producto> encontrarTodosLosProductos(){
-        return (List<Producto>)productoODA.findAll();
-    }
-    
+  
+    /* 
     @Transactional
     public Producto actualizarProducto(Producto producto1){
         return productoODA.save(producto1);
