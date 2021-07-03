@@ -25,7 +25,7 @@ public class Producto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long codProd;
-    
+     
     @NotEmpty
     protected String nombreProducto;
     
