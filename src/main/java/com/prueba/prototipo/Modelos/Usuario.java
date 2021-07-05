@@ -34,5 +34,6 @@ public class Usuario {
     @NotEmpty
     protected String contraseñaUsuario; //Probar con otros codigos despues, para poder implementar bloqueo
     
+    //Habia una vez mimir
     
 }
