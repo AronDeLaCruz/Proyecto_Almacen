@@ -25,6 +25,8 @@ public class Producto implements Serializable {
     protected String nombreProducto;
     
     protected String descripcionProducto;
+    
+    //protected int stockProducto;
     /*
     Como denominas a cada columna tanto aqui como en la base de datos afecta a
     la recepcion de datos
