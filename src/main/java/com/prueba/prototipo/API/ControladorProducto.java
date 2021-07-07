@@ -25,7 +25,13 @@ public class ControladorProducto {
         List<Producto> producto = productoServicio.listarProductos();
         return new ResponseEntity<>(producto, HttpStatus.OK);
     }
-
+    
+    @PostMapping("/add")
+    public ResponseEntity<Producto> agregarProducto(@RequestBody Producto producto){
+        Producto nuevoProducto = productoServicio.almacenarProducto(producto);
+        return new ResponseEntity<>(nuevoProducto, HttpStatus.OK);
+    }
+    
     /*
     @PutMapping("/update")
     public ResponseEntity<Producto> actualizarProducto(@RequestBody Producto producto1) {

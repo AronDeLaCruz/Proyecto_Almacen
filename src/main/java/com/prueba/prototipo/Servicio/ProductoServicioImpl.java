@@ -34,8 +34,8 @@ public class ProductoServicioImpl implements ProductoServicio{
     }
 
     @Override
-    public void almacenarProducto(Producto producto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Producto almacenarProducto(Producto producto) {
+        return productoODA.save(producto);
     }
 
     @Override

@@ -16,7 +16,7 @@ public interface ProductoServicio {
     
     public List<Producto> listarProductos();
     
-    public void almacenarProducto(Producto producto);
+    public Producto almacenarProducto(Producto producto);
     
     public void borrarProducto(Producto producto);
     
