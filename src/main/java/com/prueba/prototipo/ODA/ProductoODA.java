@@ -12,5 +12,7 @@ import javax.transaction.Transactional;
  * @author Aron
  */
 public interface ProductoODA extends JpaRepository<Producto,Long> {
+
+ //   public void borrarProductoPorId(Long codProd);
  
 }
