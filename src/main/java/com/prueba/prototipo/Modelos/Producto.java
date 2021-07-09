@@ -19,6 +19,7 @@ public class Producto implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
     protected Long codProd;
      
     @NotEmpty
@@ -26,6 +27,7 @@ public class Producto implements Serializable {
     
     protected String descripcionProducto;
     
+    //En caso agregar mas constructores crear el predeterminado tmb
     //protected int stockProducto;
     /*
     Como denominas a cada columna tanto aqui como en la base de datos afecta a

@@ -14,4 +14,6 @@ import java.util.List;
  */
 public interface UsuarioServicio {
     public List<Usuario> listaDeUsuarios();
+    
+  //  public String comprobacionAcceso(String username);
 }

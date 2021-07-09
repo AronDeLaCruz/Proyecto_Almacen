@@ -34,17 +34,19 @@ public class ProductoServicioImpl implements ProductoServicio{
     }
 
     @Override
+    @Transactional
     public Producto almacenarProducto(Producto producto) {
         return productoODA.save(producto);
     }
 
     @Override
+    @Transactional
     public void borrarProducto(Producto producto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        productoODA.delete(producto);
     }
 
     @Override
-    public Producto encontrarProducto(Producto producto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Producto actualizarProducto(Producto producto) {
+        return productoODA.save(producto);
     }
 }

@@ -14,4 +14,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface UsuarioODA extends JpaRepository<Usuario, Long>{
     
+    //    Usuario findbyUsername(String username);
+    
 }
