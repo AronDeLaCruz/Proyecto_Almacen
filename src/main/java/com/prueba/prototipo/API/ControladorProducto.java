@@ -32,19 +32,18 @@ public class ControladorProducto {
         return new ResponseEntity<>(nuevoProducto, HttpStatus.OK);
     }
     
-    @DeleteMapping("/delete/{codProd}")//Se puede colar mensajes en el resultado para probar
-    public ResponseEntity<?> borrarProducto(Producto producto) {
-       productoServicio.borrarProducto(producto);
-       return new ResponseEntity<>(HttpStatus.OK);
-    }
-    
+    /*
     @PutMapping("/update")
-    public ResponseEntity<Producto> actualizarProducto(@RequestBody Producto producto) {
-        Producto actualizarProducto = productoServicio.actualizarProducto(producto);
+    public ResponseEntity<Producto> actualizarProducto(@RequestBody Producto producto1) {
+        Producto actualizarProducto = productoServicio.actualizarProducto(producto1);
         return new ResponseEntity<>(actualizarProducto, HttpStatus.OK);
     }
-    
-    
+    /*
+    @DeleteMapping("/delete/{codigoProd}")
+    public ResponseEntity<?> borrarProducto(Producto producto) {
+        productoServicio.borrarProducto(producto);
+        return new ResponseEntity<>( HttpStatus.OK);
+    }*/
 }
 
 

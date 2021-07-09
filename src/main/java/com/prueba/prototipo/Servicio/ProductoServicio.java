@@ -21,7 +21,5 @@ public interface ProductoServicio {
     public void borrarProducto(Producto producto);
     
     public Producto encontrarProducto(Producto producto);
-    
-    public Producto actualizarProducto(Producto producto);
-                 
+                   
 }
