@@ -5,27 +5,36 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 import lombok.Data;
 
 /**
  *
  * @author Aron
  */
-
 @Entity
 @Data
-@Table(name ="empleado")
-public class Empleado implements Serializable{
+@Table(name ="inventariado")
+public class Inventariado implements Serializable{
     
     private final static Long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    protected Long codEmpleado;
+    protected Long codInventariado;
     
-    protected String nombreEmpleado;
+    @NotEmpty
+    protected int fechaInventariado;
     
-    protected String apellidoEmpleado;
+//    @NotEmpty
+    protected String descripcion;
+    
+    @NotEmpty
+    @ManyToOne
+    @JoinColumn(name = "cod_empleado")
+    protected Empleado codEmpleado;
     
 }

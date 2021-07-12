@@ -1,4 +1,4 @@
-//Tambien conocido como clase Bien
+ //Tambien conocido como clase Bien
 package com.prueba.prototipo.Modelos;
 
 import javax.persistence.*;
