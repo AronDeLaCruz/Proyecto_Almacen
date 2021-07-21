@@ -38,6 +38,9 @@ public class Usuario {
     @JoinColumn(name = "cod_empleado")
     protected Empleado codEmpleado;
     
-//    protected String RolUsuario;
+    @NotEmpty
+    @OneToOne
+    @JoinColumn(name = "cod_login")
+    protected Rol RolUsuario;
     
 }
