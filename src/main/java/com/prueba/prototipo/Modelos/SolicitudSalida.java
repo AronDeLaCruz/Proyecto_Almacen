@@ -1,28 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.prueba.prototipo.Modelos;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import lombok.Data;
 
-/**
- *
- * @author Aron
- */
 
 @Entity
 @Data
-@Table(name ="solicitud")
-public class Solicitud implements Serializable{
+@Table(name ="solicitud_salida")
+public class SolicitudSalida implements Serializable{
     
     private final static Long serialVersionUID=1L; 
     
@@ -34,5 +28,11 @@ public class Solicitud implements Serializable{
     protected int fechaSolicitud;
     
     
-    protected Long dniEmpleado;
+    protected int dniReceptor;
+    
+    @NotEmpty
+    @OneToMany
+    @JoinColumn(name = "cod_solicitud")
+    protected List<ProdSolSal> codigoProducto;
+    
 }

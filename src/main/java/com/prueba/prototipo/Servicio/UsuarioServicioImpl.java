@@ -22,5 +22,22 @@ public class UsuarioServicioImpl implements UsuarioServicio{
     public List<Usuario> listaDeUsuarios() {
         return (List<Usuario>)usuarioODA.findAll();
     }
+
+    @Override
+    @Transactional
+    public Usuario agregarUsuario(Usuario usuario) {
+        return usuarioODA.save(usuario);
+    }
+
+    @Override
+    public void borrarUsuario(Usuario usuario) {
+        usuarioODA.delete(usuario);
+    }
+
+    @Override
+    @Transactional
+    public Usuario actualizarUsuario(Usuario usuario) {
+       return usuarioODA.save(usuario);
+    }
     
 }

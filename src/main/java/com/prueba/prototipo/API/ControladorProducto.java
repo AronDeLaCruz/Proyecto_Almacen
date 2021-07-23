@@ -39,7 +39,7 @@ public class ControladorProducto {
         return new ResponseEntity<>(actualizarProducto, HttpStatus.OK);
     }
     
-    @DeleteMapping("/delete/{codProd}")
+    @DeleteMapping("/delete/{codigoProducto}")
     public ResponseEntity<?> borrarProducto(Producto producto) {
         productoServicio.borrarProducto(producto);
         return new ResponseEntity<>( HttpStatus.OK);

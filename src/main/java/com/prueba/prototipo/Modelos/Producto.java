@@ -32,6 +32,9 @@ public class Producto implements Serializable {
     
     protected int tempProducto;
     
+    @ManyToOne //es many pero no se donde xd
+    @JoinColumn(name = "cod_almacen")
+    protected Almacen codAlmacen;
     /*
     Como denominas a cada columna tanto aqui como en la base de datos afecta a
     la recepcion de datos

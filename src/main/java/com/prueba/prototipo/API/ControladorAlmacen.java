@@ -1,7 +1,6 @@
 package com.prueba.prototipo.API;
 
 import com.prueba.prototipo.Modelos.Almacen;
-import com.prueba.prototipo.Modelos.Producto;
 import com.prueba.prototipo.Servicio.AlmacenServicio;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author Aron
- */
+
 @RestController
 @RequestMapping("/almacen")
 public class ControladorAlmacen {

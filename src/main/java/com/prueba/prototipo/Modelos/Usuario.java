@@ -35,12 +35,12 @@ public class Usuario {
     
     @NotEmpty
     @OneToOne
-    @JoinColumn(name = "cod_empleado")
-    protected Empleado codEmpleado;
-    
-    @NotEmpty
-    @OneToOne
-    @JoinColumn(name = "cod_login")
+    @JoinColumn(name = "cod_usuario")
     protected Rol RolUsuario;
     
+    @OneToOne
+    @JoinColumn(name = "dni_empleado")
+    protected Empleado dniEmpleado;
+    
+      
 }

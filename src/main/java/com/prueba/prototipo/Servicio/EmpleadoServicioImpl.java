@@ -25,22 +25,22 @@ public class EmpleadoServicioImpl implements EmpleadoServicio{
     public List<Empleado> listaEmpleados() {
         return (List<Empleado>)empleadoODA.findAll();
     }
-    
+   
     @Override
     @Transactional
-    public Empleado agregarEmpleado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Empleado agregarEmpleado(Empleado empleado) {
+        return empleadoODA.save(empleado);
     }
 
     @Override
-    public void borrarEmpleado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void borrarEmpleado(Empleado empleado) {
+        empleadoODA.delete(empleado);
     }
 
     @Override
     @Transactional
-    public Empleado actualizarEmpleado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Empleado actualizarEmpleado(Empleado empleado) {
+        return empleadoODA.save(empleado);
     }
     
 }

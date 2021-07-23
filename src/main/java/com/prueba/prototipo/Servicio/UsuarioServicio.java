@@ -5,6 +5,7 @@
  */
 package com.prueba.prototipo.Servicio;
 
+import com.prueba.prototipo.Modelos.Empleado;
 import com.prueba.prototipo.Modelos.Usuario;
 import java.util.List;
 
@@ -13,5 +14,13 @@ import java.util.List;
  * @author Aron
  */
 public interface UsuarioServicio {
+    
     public List<Usuario> listaDeUsuarios();
+    
+    public Usuario agregarUsuario(Usuario usuario);
+    
+    public void borrarUsuario(Usuario usuario);
+    
+    public Usuario actualizarUsuario(Usuario usuario);
+
 }

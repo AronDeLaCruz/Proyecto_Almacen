@@ -12,17 +12,16 @@ import lombok.Data;
  *
  * @author Aron
  */
-//@Entity //: Al bloquear entity, esta clase no requiere un dato principal
+@Entity //: Al bloquear entity, esta clase no requiere un dato principal
 @Data
 @Table(name ="rol")
 public class Rol {
     
-//   private final static Long serialVersionUID=1L; 
-/*    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idRol;
-   */ 
+   private final static Long serialVersionUID=1L; 
+   
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   private Long codRol;
     
    @NotEmpty
    private String rolUsuario;

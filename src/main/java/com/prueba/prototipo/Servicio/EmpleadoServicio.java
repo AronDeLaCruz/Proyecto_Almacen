@@ -11,10 +11,10 @@ public interface EmpleadoServicio {
     
     public List<Empleado> listaEmpleados();
     
-    public Empleado agregarEmpleado();
+    public Empleado agregarEmpleado(Empleado empleado);
     
-    public void borrarEmpleado();
+    public void borrarEmpleado(Empleado empleado);
     
-    public Empleado actualizarEmpleado();
+    public Empleado actualizarEmpleado(Empleado empleado);
     
 }
