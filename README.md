@@ -6,7 +6,7 @@ parte del código base está hecho
 
 Además de ver la interfaz(y el front-end en general)
 que estará hecha en angular 
-
+Para descargar cambiar a rama/branch completado que no sé cómo hacer merge v:
 
 Pasos para que está cosa funcione
 
